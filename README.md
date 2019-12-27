@@ -1,4 +1,4 @@
-#CodeTest Readme
+# CodeTest Readme
 ## Coding Challenge “Passionate Navigation”
 
 | Endpoint | Functionality |
@@ -19,18 +19,18 @@
 | **PUT /courses/:id** | 	Update a courses |
 | **DELETE /courses/:id** | 	Delete a courses |
 
-###Local run
-#####Dependencies:
+### Local run
+##### Dependencies:
 >ruby '2.6.5'
 >gem 'rails', '~> 6.0.2'
 >gem 'pg', '>= 0.18'
-#####Gems used:
+##### Gems used:
 >gem 'bcrypt'
 >gem 'doorkeeper'
 >gem 'shoulda-matchers'
 >gem 'rspec-rails'
 
-####Init:
+#### Init:
 ```shell
 $ rails db:create
 ```
@@ -60,7 +60,7 @@ $ http POST :3000/categories access_token=HhAV4wpAK-lqNcvorpJi7s1mQj_niIgp_ypdIo
 ```
 >Make shure vertical_id exist.For more Endpoints check top table!
 
-###Testing
+### Testing
 
 ```shell
 $ rspec -fd
