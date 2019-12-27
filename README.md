@@ -38,10 +38,10 @@ $ rails db:create
 $ rails db:migrate
 ```
 ```shell
-$ rails c
+$ rails db:seed
 ```
 ```shell
-$ rails db:seed
+$ rails c
 ```
 ```shell
 $ irb(main):001:0> Doorkeeper::Application.all
