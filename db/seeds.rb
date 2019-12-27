@@ -1,0 +1,26 @@
+
+User.create!(email: 'me@example.com', password: 'admin')
+Vertical.create!(name: "Health & Fitness")
+Vertical.create!(name: "Business")
+Vertical.create!(name: "Music")
+
+Category.create!(name: "Booty & Abs", vertical_id: 1, state: "active")
+Category.create!(name: "Full Body", vertical_id: 1, state: "active")
+Category.create!(name: "Advertising", vertical_id: 2, state: "active")
+Category.create!(name: "Writing", vertical_id: 2, state: "active")
+Category.create!(name: "Singing", vertical_id: 3, state: "active")
+Category.create!(name: "Music Fundamentals", vertical_id: 3, state: "active")
+
+Course.create!(name: "Loose the Gutt, keep the Butt",author: "Anowa", category_id: 1,state: "active")
+Course.create!(name: "BrittneBabe Fitness Transformation", author: "Brittnebabe", category_id: 1, state: "active")
+Course.create!(name: "BTX: Body Transformation Extreme", author: "Barstarzz", category_id: 2, state: "active")
+Course.create!(name: "Facebook Funnel Marketing", author: "Russell Brunson", category_id: 2, state: "active")
+Course.create!(name: "Build a Wild Audience", author: "Tim Nilson", category_id: 3, state: "active")
+Course.create!(name: "Editorial Writing Secrets", author: "J. K. Rowling", category_id: 4, state: "active")
+Course.create!(name: "Scientific Writing", author: "Stephen Hawking", category_id: 4, state: "active")
+Course.create!(name: "Vocal Training 101", author: "Linkin Park", category_id: 5, state: "active")
+Course.create!(name: "Music Production", author: "Lady Gaga", category_id: 5, state: "active")
+Course.create!(name: "Learn the Piano", author: "Lang Lang", category_id: 6, state: "active")
+Course.create!(name: "Become a guitar hero", author: "Jimmy Page", category_id: 6, state: "active")
+
+application = Doorkeeper::Application.create(name: "SiteCode", scopes: "read write", confidential: false ,redirect_uri: "urn:ietf:wg:oauth:2.0:oob")
