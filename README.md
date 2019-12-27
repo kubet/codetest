@@ -41,6 +41,9 @@ $ rails db:migrate
 $ rails c
 ```
 ```shell
+$ rails db:seed
+```
+```shell
 $ irb(main):001:0> Doorkeeper::Application.all
 ```
 ```shell
