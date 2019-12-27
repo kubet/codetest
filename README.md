@@ -49,6 +49,7 @@ $ irb(main):001:0> Doorkeeper::Application.all
 ```shell
 $ => #<ActiveRecord::Relation [#<Doorkeeper::Application id: 1, name: "SiteCode", uid: "i3asd4_pjG3Dj6jN9exU3zIhq2O71Sh_uid4FObwoXI", secret: "TU9p3Hg_O-WyAWfvthq0XiThUbbqgSr4J7KOVVWoNp8", redirect_uri: "urn:ietf:wg:oauth:2.0:oob", scopes: "read write", confidential: false, created_at: "2019-12-27 10:50:36", updated_at: "2019-12-27 10:50:36">]>
 ```
+>Enter UID and SECRET below
 ```shell
 $ curl --location --request POST 'http://localhost:3000/oauth/token?client_id=YOURUIDFROMTOP&client_secret=YOURSECRETFROMTOP' --header 'Content-Type: application/json' --header 'Accept: application/json' --data-raw '{"username": "me@example.com", "password": "admin", "grant_type": "password" }'
 ```
