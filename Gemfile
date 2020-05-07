@@ -26,7 +26,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # gem 'rack-cors'
 
 gem 'bcrypt', '~> 3.1', '>= 3.1.13'
-gem 'doorkeeper', '~> 5.2', '>= 5.2.3'
+gem 'doorkeeper', '~> 5.2'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.9'
